@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bottomnavigation">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapsActivity" />
+
+        <activity
+            android:name=".search"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DaftarIsi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Tentang"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Rate"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".persiapanhaji"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DzikirDoa"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FiqihUmrah"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FiqihHaji"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".MainActivityGundul"
+            android:parentActivityName=".FiqihUmrah"/>
+        <activity android:name=".MainActivityMaqom"
+            android:parentActivityName=".FiqihUmrah"/>
+        <activity android:name=".MainActivityZamzam"
+            android:parentActivityName=".FiqihUmrah"/>
+        <activity android:name=".MainActivityThawaf"
+            android:parentActivityName=".FiqihUmrah"/>
+        <activity android:name=".MainActivitySai"
+            android:parentActivityName=".FiqihUmrah"/>
+        <activity android:name=".MainActivityUmrah"
+            android:parentActivityName=".FiqihUmrah"/>
+
+        <activity android:name=".dHakikatTalbiyah"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dMencariPertemananyangBaikdalamPerjalanan"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dBerhajiDenganHartaYangHalal"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dHindariMaksiat"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dJanganBerdebat"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dMeneladaniNabi"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dIklasdalamhaji"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dBersabar"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dSegeraMenjadiTamuAllah"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dJamaahHajiTamuAllah"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dKeutamaanHaji"
+            android:parentActivityName=".persiapanhaji"/>
+        <activity android:name=".dBertaubatSebelumHaji"
+            android:parentActivityName=".persiapanhaji"/>
+
+        <activity android:name=".IhramActivity"
+            android:parentActivityName=".MainActivityIhram"/>
+
+        <activity android:name=".iPenjelasan"
+            android:parentActivityName=".IhramActivity"/>
+        <activity android:name=".iLarangan"
+            android:parentActivityName=".IhramActivity"/>
+        <activity android:name=".iKesalahan"
+            android:parentActivityName=".IhramActivity"/>
+        <activity android:name=".iNiat"
+            android:parentActivityName=".IhramActivity"/>
+        <activity android:name=".iSunnah"
+            android:parentActivityName=".IhramActivity"/>
+        <activity android:name=".mPenjelasan"
+            android:parentActivityName=".IhramActivity"/>
+        <activity android:name=".mMiqot"
+            android:parentActivityName=".IhramActivity"/>
+        <activity android:name=".mJeddah"
+            android:parentActivityName=".IhramActivity"/>
+        <activity android:name=".mKesalahan"
+            android:parentActivityName=".IhramActivity"/>
+        <activity android:name=".Maqom1"
+            android:parentActivityName=".MainActivityMaqom"/>
+        <activity android:name=".Maqom2"
+            android:parentActivityName=".MainActivityMaqom"/>
+        <activity android:name=".tKeutamaan"
+            android:parentActivityName=".MainActivityThawaf"/>
+        <activity android:name=".tPeringatan"
+            android:parentActivityName=".MainActivityThawaf"/>
+        <activity android:name=".tSunnah"
+            android:parentActivityName=".MainActivityThawaf"/>
+        <activity android:name=".tSyarat"
+            android:parentActivityName=".MainActivityThawaf"/>
+        <activity android:name=".tMacam"
+            android:parentActivityName=".MainActivityThawaf"/>
+        <activity android:name=".sSejarah"
+            android:parentActivityName=".MainActivitySai"/>
+        <activity android:name=".sHukum"
+            android:parentActivityName=".MainActivitySai"/>
+        <activity android:name=".sRukun"
+            android:parentActivityName=".MainActivitySai"/>
+        <activity android:name=".sHikmah"
+            android:parentActivityName=".MainActivitySai"/>
+
+        <activity android:name=".hThawaf"
+            android:parentActivityName=".FiqihHaji"/>
+        <activity android:name=".hPenjelasan"
+            android:parentActivityName=".FiqihHaji"/>
+        <activity android:name=".hPelaksanaan"
+            android:parentActivityName=".FiqihHaji"/>
+        <activity android:name=".hMenetap"
+            android:parentActivityName=".FiqihHaji"/>
+        <activity android:name=".hFiqihUmrah"
+            android:parentActivityName=".FiqihHaji"/>
+        <activity android:name=".hrTasyriq"
+            android:parentActivityName=".hPelaksanaan"/>
+        <activity android:name=".hrArafah"
+            android:parentActivityName=".hPelaksanaan"/>
+        <activity android:name=".hrMuzdalifah"
+            android:parentActivityName=".hPelaksanaan"/>
+        <activity android:name=".hrNahr"
+            android:parentActivityName=".hPelaksanaan"/>
+        <activity android:name=".hrTarwiyah"
+            android:parentActivityName=".hPelaksanaan"/>
+
+        <activity android:name=".nMainActivitySai"
+            android:parentActivityName=".hrNahr"/>
+        <activity android:name=".nMencukur"
+            android:parentActivityName=".hrNahr"/>
+        <activity android:name=".nThawaf"
+            android:parentActivityName=".hrNahr"/>
+        <activity android:name=".nMenyembelih"
+            android:parentActivityName=".hrNahr"/>
+        <activity android:name=".nMelempar"
+            android:parentActivityName=".hrNahr"/>
+        <activity android:name=".Cukur"
+            android:parentActivityName=".hrNahr"/>
+        <activity android:name=".tsMabit"
+            android:parentActivityName=".hrTasyriq"/>
+        <activity android:name=".tsMelempar"
+            android:parentActivityName=".hrTasyriq"/>
+
+
+        <activity android:name=".iLaranganPotong"
+            android:parentActivityName=".iLarangan"/>
+        <activity android:name=".iLaranganBercumbu"
+            android:parentActivityName=".iLarangan"/>
+        <activity android:name=".iLaranganNganu"
+            android:parentActivityName=".iLarangan"/>
+        <activity android:name=".iLaranganBerburu"
+            android:parentActivityName=".iLarangan"/>
+        <activity android:name=".iLaranganJahit"
+            android:parentActivityName=".iLarangan"/>
+        <activity android:name=".iLaranganMW"
+            android:parentActivityName=".iLarangan"/>
+        <activity android:name=".iLaranganKuku"
+            android:parentActivityName=".iLarangan"/>
+        <activity android:name=".iLaranganAkad"
+            android:parentActivityName=".iLarangan"/>
+        <activity android:name=".iLaranganKpl"
+            android:parentActivityName=".iLarangan"/>
+        <activity android:name=".iPeringatan"
+            android:parentActivityName=".iLarangan"/>
+
+
+    </application>
+
+</manifest>

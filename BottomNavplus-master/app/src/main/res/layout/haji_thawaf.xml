@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hThawaf">
+
+    <TextView
+        android:id="@+id/thawafw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/thawaf_wada"/>
+    <TextView
+        android:id="@+id/twpenjelasan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thawafw"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/twpenjelasan"
+        android:textSize="11sp" />
+    <Button
+        android:id="@+id/twpenjelasan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twpenjelasan"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/twpenjelasan2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="11sp" />
+    <Button
+        android:id="@+id/twpenjelasan3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twpenjelasan2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/twpenjelasan3"
+        android:textSize="11sp" />
+
+
+
+</RelativeLayout>
