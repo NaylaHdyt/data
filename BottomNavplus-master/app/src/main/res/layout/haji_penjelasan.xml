@@ -45,18 +45,17 @@
         android:layout_marginTop="10dp"
         android:textSize="15sp"
         android:text="@string/htpenjelasan3"/>
-    <Button
+    <Buttonz
         android:id="@+id/htpenjelasan4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/htpenjelasan3"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:background="@drawable/custom2"
         android:textColor="@color/colorPrimaryDark"
         android:layout_marginTop="10dp"
-        android:textSize="11sp"
+        android:textSize="10sp"
         android:text="@string/htpenjelasan4"/>
-
-
 </RelativeLayout>
 </ScrollView>

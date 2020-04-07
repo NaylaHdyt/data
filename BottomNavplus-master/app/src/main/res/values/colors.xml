@@ -15,4 +15,8 @@
     <color name="apaaja">#e0f7fa</color>
     <color name="bg">#828FD1</color>
 
+    <color name="custom">#d791EF</color>
+    <color name="custom3">#D98683</color>
+    <color name="custom4">#B15B64</color>
+
 </resources>
